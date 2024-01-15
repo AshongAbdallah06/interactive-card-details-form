@@ -35,6 +35,10 @@
         top: 610px;
         left: 100px;
     }
+
+    .attribution {
+        position: absolute; bottom: -500px;
+    }
 }
 
 @media (max-width: 570px) {
