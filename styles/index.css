@@ -20,8 +20,8 @@ main {
     position: relative;
     background-image: url('/images/bg-main-desktop.png');
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 70vh;
+    height: 630px;
+    width: 700px;
 }
 
 .card {
@@ -31,14 +31,14 @@ main {
 .front-container {
     position: absolute;
     z-index: 2;
-    left: 120px;
+    left: 200px;
     top: 100px;
 }
 
 .back-container {
     position: absolute;
     top: 320px;
-    left: 200px;
+    left: 300px;
     z-index: 2;
 }
 
@@ -87,10 +87,10 @@ main {
 
 .right {
     position: relative;
-    left: 350px;
+    left: 250px;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 80%;
+    /* height: 100vh; */
+    /* width: 80%; */
     display: flex;
     flex-direction: column;
     justify-content: center;

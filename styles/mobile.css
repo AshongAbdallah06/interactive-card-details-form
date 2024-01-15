@@ -1,14 +1,46 @@
-@media (max-width: 600px) {
+@media (max-width: 852px) {
     body {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         /* background-color: red; */
     }   
 
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     .left {
         background-image: url('/images/bg-main-mobile.png');
-        width: 100%;
+        background-size: 100%;
+        transform: translate(200px);
+        height: 500px;
+    }
+
+    .front-container {
+        left: 60px;
+        top: 300px;
+    }
+
+    .back-container {
+        top: 200px;
+        z-index: -1;
+        left: 150px;
+    }
+
+    .right {
+        top: 100px;
+        left: 25%;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 570px) {
+    .left {
+        transform: translate(200px);
+    }
+
+    .right {
+        left: 45%;
     }
 }
