@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -15,37 +16,107 @@
   </style>
 </head>
 <body>
+	<main>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+		<section class="left">
+			<div class="card front-card">
+				<div class="front-container">
+					<img src="/images/card-logo.svg" class="logo" alt="logo">
 
-  000
+					<img src="images/bg-card-front.png" alt="card-front" class="card-img front-img">
 
-  Cardholder Name
-  e.g. Jane Appleseed
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+					<div class="details">
+						<div class="card-number">
+							0000 0000 0000 0000
+						</div>
+						
+						<div class="name-date">
+							<div class="name">
+								JANE APPLESEED
+							</div>
+		
+							<div class="date">
+								00/00
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+			<div class="card back-card">
+				<div class="back-container">
 
-  CVC
-  e.g. 123
+					<img src="images/bg-card-back.png" alt="card-front" class="card-img back-img">
 
-  Confirm
+					<div class="cvv">
+						000
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- Completed state start -->
+		<section class="right">
+			<label for="name">
+				CARDHOLDER NAME
+			</label>
+			<input type="text" class="name-input" placeholder="e.g. Jane Appleseed">
+			<p class="error error-name-message">Invalid name input</p>
 
+			<label for="name">
+				CARD NUMBER
+			</label>
+			<input type="text" class="number" placeholder="e.g. 1234 5678 9123 0000">
+			<p class="error error-number-message">Wrong format, numbers only</p>
+
+			<div class="date-cvc">
+				<div class="exp-date">
+					<label for="exp-date" class="date-label">
+						EXP.DATE (MM/YY)
+					</label>
+					<input type="text" placeholder="MM" class="month">
+					<input type="text" placeholder="YY" class="year">
+				</div>
+	
+				<div class="cvc">
+					<label for="cvc" class="cvc-label">CVC</label>
+					<input type="text" placeholder="e.g. 123" class="cvc-input">
+				</div>
+
+				<div class="date-cvc-errors">
+					<p class="error error-month-message"></p>
+					<p class="error error-year-message"></p>	
+				</div>
+				<p class="error error-cvc-message"></p>
+
+			</div>
+
+			<button class="confirm-btn btn">
+				Confirm
+			</button>
+		</section>
+
+		<section class="complete">
+			<img src="images/icon-complete.svg" class="complete-logo">
+			<h1 class="thank-you">THANK YOU</h1>
+			<p class="added-message">
+				We've added your card details.
+			</p>
+			<button class="btn continue-btn">Continue</button>
+		</section>
+	</main>
+
+  <!--
   Thank you!
   We've added your card details
-  Continue
+  Continue -->
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.frontendmentor.io/profile/AshongAbdallah06">Ashong Abdallah</a>.
+  </footer>
+
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
