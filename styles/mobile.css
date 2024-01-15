@@ -1,9 +1,4 @@
 @media (max-width: 852px) {
-    body {
-        /* background-color: red; */
-    }   
-
-
     main {
         flex-direction: column;
         justify-content: center;
@@ -32,6 +27,13 @@
         top: 100px;
         left: 25%;
         white-space: nowrap;
+    }
+
+
+    .complete {
+        /* padding: 60px; */
+        top: 610px;
+        left: 100px;
     }
 }
 

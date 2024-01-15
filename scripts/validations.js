@@ -114,6 +114,8 @@ function checkInputBorders() {
     } else {
         // Show complete message
         document.querySelector('.complete').classList.add('show-complete');
+        document.querySelector('.right').style.opacity = 0;
+
 
 
         updateCardContent();
@@ -135,6 +137,8 @@ export function validateFields() {
     // Go back
     continueBtn.addEventListener('click', () => {
         document.querySelector('.complete').classList.remove('show-complete');
+
+        document.querySelector('.right').style.opacity = 1;
     })
 
     validateName();
