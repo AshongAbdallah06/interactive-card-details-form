@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/mobile.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -33,11 +34,11 @@
 						
 						<div class="name-date">
 							<div class="name">
-								JANE APPLESEED
+								CARDHOLDER'S NAME
 							</div>
 		
 							<div class="date">
-								00/00
+								MM/YY
 							</div>
 						</div>
 	
@@ -50,8 +51,8 @@
 
 					<img src="images/bg-card-back.png" alt="card-front" class="card-img back-img">
 
-					<div class="cvv">
-						000
+					<div class="cvc">
+						CVC
 					</div>
 				</div>
 			</div>
@@ -70,27 +71,30 @@
 			<input type="text" class="number" placeholder="e.g. 1234 5678 9123 0000">
 			<p class="error error-number-message">Wrong format, numbers only</p>
 
-			<div class="date-cvc">
-				<div class="exp-date">
-					<label for="exp-date" class="date-label">
-						EXP.DATE (MM/YY)
-					</label>
-					<input type="text" placeholder="MM" class="month">
-					<input type="text" placeholder="YY" class="year">
-				</div>
-	
-				<div class="cvc">
-					<label for="cvc" class="cvc-label">CVC</label>
-					<input type="text" placeholder="e.g. 123" class="cvc-input">
+			<section class="date-cvc">
+				<div class="date" style="display: inline-block;">
+					<label for="exp-date" style="display: block;">EXP. DATE (MM/YY)</label>
+
+					<div class="container mm-container">
+						<input type="text" class="month-input" placeholder="MM">
+						<p class="date-cvc-error mm-error-message"></p>
+
+					</div>
+
+					<div class="container yy-container">
+						<input type="text" class="year-input" placeholder="YY">
+						<p class="date-cvc-error yy-error-message"></p>
+
+					</div>
 				</div>
 
-				<div class="date-cvc-errors">
-					<p class="error error-month-message"></p>
-					<p class="error error-year-message"></p>	
-				</div>
-				<p class="error error-cvc-message"></p>
+				<div class="container cvc-container">
+					<label for="cvc">CVC</label>
+					<input type="text" class="cvc-input" placeholder="e.g. 123">
+					<p class="date-cvc-error cvc-error-message"></p>
 
-			</div>
+				</div>
+			</section>
 
 			<button class="confirm-btn btn">
 				Confirm

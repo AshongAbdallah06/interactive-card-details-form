@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }   
+
+    
+    .left {
+        background-image: url('/images/bg-main-mobile.png');
+        width: 100%;
+    }
+}
